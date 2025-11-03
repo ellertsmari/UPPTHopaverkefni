@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect">
+            <option value="is">Íslenska</option>
+            <option value="en">English</option>
+            <option value="th">ไทย (Thai)</option>
+            <option value="fa">فارسی (Persian)</option>
+            <option value="ar">العربية (Arabic)</option>
+            <option value="uk">Українська (Ukrainian)</option>
+        </select>
+    </div>
+
     <div class="slideshow-container">
         
         <!-- Slide 1: Velkomin -->
         <div class="slide active">
             <div class="slide-content">
-                <h1 class="welcome-title">Velkomin í fyrsta hópaverkefnið!!</h1>
-                <p class="subtitle">Alþjóðlegar línur - Tækniskólinn</p>
+                <h1 class="welcome-title" data-i18n="welcomeTitle">Velkomin í fyrsta hópaverkefnið!!</h1>
+                <p class="subtitle" data-i18n="subtitle">Alþjóðlegar línur - Tækniskólinn</p>
             </div>
         </div>
 
         <!-- Slide 2: Hópar -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Hóparnir</h1>
+                <h1 data-i18n="groupsTitle">Hóparnir</h1>
                 <div class="groups-container">
                     <div class="group-card">
-                        <h2>Hópur 1</h2>
+                        <h2 data-i18n="group1">Hópur 1</h2>
                         <ul class="group-members">
                             <li>Anh Tuan</li>
                             <li>Dmytro</li>
@@ -32,7 +44,7 @@
                         </ul>
                     </div>
                     <div class="group-card">
-                        <h2>Hópur 2</h2>
+                        <h2 data-i18n="group2">Hópur 2</h2>
                         <ul class="group-members">
                             <li>Tymofii</li>
                             <li>Jon</li>
@@ -41,7 +53,7 @@
                         </ul>
                     </div>
                     <div class="group-card">
-                        <h2>Hópur 3</h2>
+                        <h2 data-i18n="group3">Hópur 3</h2>
                         <ul class="group-members">
                             <li>Elías</li>
                             <li>Vitalii</li>
@@ -51,7 +63,7 @@
                         </ul>
                     </div>
                     <div class="group-card">
-                        <h2>Hópur 4</h2>
+                        <h2 data-i18n="group4">Hópur 4</h2>
                         <ul class="group-members">
                             <li>Hiba Badran</li>
                             <li>Malak Omran</li>
@@ -66,23 +78,23 @@
         <!-- Slide 3: Dagskrá -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Dagskrá - 4 Daga Verkefni</h1>
+                <h1 data-i18n="scheduleTitle">Dagskrá - 4 Daga Verkefni</h1>
                 <div class="schedule">
                     <div class="day">
-                        <h2>Dagur 1 - Undirbúningur</h2>
-                        <p>Skipulagning, hugmyndavinnu og hlutverk</p>
+                        <h2 data-i18n="day1Title">Dagur 1 - Undirbúningur</h2>
+                        <p data-i18n="day1Desc">Skipulagning, hugmyndavinnu og hlutverk</p>
                     </div>
                     <div class="day">
-                        <h2>Dagur 2 - Vinna að kynningum</h2>
-                        <p>Búa til glærur og efni</p>
+                        <h2 data-i18n="day2Title">Dagur 2 - Vinna að kynningum</h2>
+                        <p data-i18n="day2Desc">Búa til glærur og efni</p>
                     </div>
                     <div class="day">
-                        <h2>Dagur 3 - Klára verkefnið</h2>
-                        <p>Fínpússa og æfa kynningar</p>
+                        <h2 data-i18n="day3Title">Dagur 3 - Klára verkefnið</h2>
+                        <p data-i18n="day3Desc">Fínpússa og æfa kynningar</p>
                     </div>
                     <div class="day">
-                        <h2>Dagur 4 - Kynningar</h2>
-                        <p>Allir hópar kynna verkefnin sín</p>
+                        <h2 data-i18n="day4Title">Dagur 4 - Kynningar</h2>
+                        <p data-i18n="day4Desc">Allir hópar kynna verkefnin sín</p>
                     </div>
                 </div>
             </div>
@@ -91,27 +103,27 @@
         <!-- Slide 4: Dagur 1 í smáatriðum -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Dagur 1 - Undirbúningur</h1>
+                <h1 data-i18n="day1DetailsTitle">Dagur 1 - Undirbúningur</h1>
                 <div class="details-list">
                     <div class="detail-item">
-                        <h3>🎯 Markmið</h3>
-                        <p>Kynnast hópnum og skipuleggja verkefnið</p>
+                        <h3 data-i18n="goalsHeading">🎯 Markmið</h3>
+                        <p data-i18n="goalsText">Kynnast hópnum og skipuleggja verkefnið</p>
                     </div>
                     <div class="detail-item">
-                        <h3>🤝 Verkefni</h3>
+                        <h3 data-i18n="tasksHeading">🤝 Verkefni</h3>
                         <ul>
-                            <li>hlusta á fyrirlestur frá kennara</li>
-                            <li>Allir velja efni fyrir kynninguna</li>
-                            <li>Hópur kýs bestu hugmyndina</li>
-                            <li>Finna nafn á hópinn</li>
-                            <li>Búa til moodboard um hvernig muna glærur líta út og kjósa besta</li>
+                            <li data-i18n="task1">hlusta á fyrirlestur frá kennara</li>
+                            <li data-i18n="task2">Allir velja efni fyrir kynninguna</li>
+                            <li data-i18n="task3">Hópur kýs bestu hugmyndina</li>
+                            <li data-i18n="task4">Finna nafn á hópinn</li>
+                            <li data-i18n="task5">Búa til moodboard um hvernig muna glærur líta út og kjósa besta</li>
                         </ul>
                     </div>
                     <div class="detail-item">
-                        <h3>💡 Ábendingar</h3>
-                        <p>Veljið efni sem þið eruð áhugasöm um</p>
+                        <h3 data-i18n="tipsHeading">💡 Ábendingar</h3>
+                        <p data-i18n="tip1">Veljið efni sem þið eruð áhugasöm um</p>
                         <br>
-                        <p>Notið Figjam fyrir hugmyndir, kosningu og moodboard</p>
+                        <p data-i18n="tip2">Notið Figjam fyrir hugmyndir, kosningu og moodboard</p>
                     </div>
                 </div>
             </div>
@@ -120,35 +132,34 @@
         <!-- Slide 5: Dagur 2 í smáatriðum -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Dagur 2 - Vinna að kynningum</h1>
+                <h1 data-i18n="day2DetailsTitle">Dagur 2 - Vinna að kynningum</h1>
                 <div class="details-list">
                     <div class="detail-item">
-                        <h3>🎯 Markmið</h3>
-                        <p>Búa til gæðaefni fyrir kynninguna</p>
+                        <h3 data-i18n="goalsHeading">🎯 Markmið</h3>
+                        <p data-i18n="day2GoalsText">Búa til gæðaefni fyrir kynninguna</p>
                     </div>
                     <div class="detail-item">
-                        <h3>✍️ Verkefni</h3>
+                        <h3 data-i18n="day2TasksHeading">✍️ Verkefni</h3>
                         <ul>
-                            <li>Rannsaka efnið ykkar</li>
-                            <li>
-                                Búa til glærur í Figma
+                            <li data-i18n="day2Task1">Rannsaka efnið ykkar</li>
+                            <li data-i18n="day2Task2">Búa til glærur í Figma
                                 <ul>
-                                    <li>Fyrstu glærurnar eiga að vera kynning á hópnum</li>
-                                    <li>Notið Copilot til þess að hjálpa ykkur að bæta glærurnar</li>
-                                    <li>Gakktu úr skugga um að glærurnar séu skýrar og myndrænar</li>
-                                    <li>Síðasta glæran á að bjóða áhorfendum upp á að koma með spurningar</li>
+                                    <li data-i18n="day2Task2_1">Fyrstu glærurnar eiga að vera kynning á hópnum</li>
+                                    <li data-i18n="day2Task2_2">Notið Copilot til þess að hjálpa ykkur að bæta glærurnar</li>
+                                    <li data-i18n="day2Task2_3">Gakktu úr skugga um að glærurnar séu skýrar og myndrænar</li>
+                                    <li data-i18n="day2Task2_4">Síðasta glæran á að bjóða áhorfendum upp á að koma með spurningar</li>
                                 </ul>
                             </li>
 
-                            <li>Safna myndum og efni</li>
-                            <li>Skrifa handrit fyrir kynninguna sem lesa má upp fyrir hverja glæru</li>
+                            <li data-i18n="day2Task3">Safna myndum og efni</li>
+                            <li data-i18n="day2Task4">Skrifa handrit fyrir kynninguna sem lesa má upp fyrir hverja glæru</li>
                         </ul>
                     </div>
                     <div class="detail-item">
-                        <h3>💡 Ábendingar</h3>
-                        <p>Haldið því einföldu - minni texti, fleiri myndir!</p>
-                        <p>allur auka texti getur verið í handriti og lesinn upp en þarf ekki að vera á glærunum sjálfum</p>
-                        <p>Notið Copilot til að hjálpa ykkur að búa til betri glærur og handrit</p>
+                        <h3 data-i18n="tipsHeading">💡 Ábendingar</h3>
+                        <p data-i18n="day2Tip1">Haldið því einföldu - minni texti, fleiri myndir!</p>
+                        <p data-i18n="day2Tip2">allur auka texti getur verið í handriti og lesinn upp en þarf ekki að vera á glærunum sjálfum</p>
+                        <p data-i18n="day2Tip3">Notið Copilot til að hjálpa ykkur að búa til betri glærur og handrit</p>
                     </div>
                 </div>
             </div>
@@ -157,27 +168,27 @@
         <!-- Slide 6: Dagur 3 í smáatriðum -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Dagur 3 - Klára verkefnið</h1>
+                <h1 data-i18n="day3DetailsTitle">Dagur 3 - Klára verkefnið</h1>
                 <div class="details-list">
                     <div class="detail-item">
-                        <h3>🎯 Markmið</h3>
-                        <p>Fínpússa og undirbúa sig fyrir kynninguna</p>
+                        <h3 data-i18n="goalsHeading">🎯 Markmið</h3>
+                        <p data-i18n="day3GoalsText">Fínpússa og undirbúa sig fyrir kynninguna</p>
                     </div>
                     <div class="detail-item">
-                        <h3>🔧 Verkefni</h3>
+                        <h3 data-i18n="day3TasksHeading">🔧 Verkefni</h3>
                         <ul>
-                            <li>Fara yfir allt efnið</li>
-                            <li>Laga villur og bæta gæði</li>
-                            <li>Ákveða hver kynnir hvaða glærur</li>
-                            <li>Æfa kynninguna saman</li>
-                            <li>Prófa tæknina (tölva, skjávarpi, o.fl.)</li>
-                            <li>fá kennara til þess að gefa umsögn og breyta eftir því</li>
-                            <li>Gera nauðsynlegar breytingar eftir æfingar og umsögn kennara</li>
+                            <li data-i18n="day3Task1">Fara yfir allt efnið</li>
+                            <li data-i18n="day3Task2">Laga villur og bæta gæði</li>
+                            <li data-i18n="day3Task3">Ákveða hver kynnir hvaða glærur</li>
+                            <li data-i18n="day3Task4">Æfa kynninguna saman</li>
+                            <li data-i18n="day3Task5">Prófa tæknina (tölva, skjávarpi, o.fl.)</li>
+                            <li data-i18n="day3Task6">fá kennara til þess að gefa umsögn og breyta eftir því</li>
+                            <li data-i18n="day3Task7">Gera nauðsynlegar breytingar eftir æfingar og umsögn kennara</li>
                         </ul>
                     </div>
                     <div class="detail-item">
-                        <h3>💡 Ábendingar</h3>
-                        <p>Æfing er lykillinn að góðri kynningu - æfið oftar en einu sinni!</p>
+                        <h3 data-i18n="tipsHeading">💡 Ábendingar</h3>
+                        <p data-i18n="day3Tip">Æfing er lykillinn að góðri kynningu - æfið oftar en einu sinni!</p>
                     </div>
                 </div>
             </div>
@@ -186,28 +197,28 @@
         <!-- Slide 7: Dagur 4 - Kynningadagur í smáatriðum -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Dagur 4 - Kynningadagur</h1>
+                <h1 data-i18n="day4DetailsTitle">Dagur 4 - Kynningadagur</h1>
                 <div class="details-list">
                     <div class="detail-item">
-                        <h3>⏰ Tími</h3>
-                        <p>Hver kynnning er 15 til 20 mínútur</p>
+                        <h3 data-i18n="timeHeading">⏰ Tími</h3>
+                        <p data-i18n="timeText">Hver kynnning er 15 til 20 mínútur</p>
                     </div>
                     <div class="detail-item">
                         <h3>� Þátttaka</h3>
                         <p>Allir meðlimir hópsins þurfa að taka þátt</p>
                     </div>
                     <div class="detail-item">
-                        <h3>📊 Framsetning</h3>
-                        <p>Nota glærur eða aðrar myndrænar leiðir</p>
+                        <h3 data-i18n="presentationHeading">📊 Framsetning</h3>
+                        <p data-i18n="presentationText">Nota glærur eða aðrar myndrænar leiðir</p>
                     </div>
                     <div class="detail-item">
-                        <h3>💬 Spurningar</h3>
-                        <p>Spurningartími eftir hverja kynningu</p>
+                        <h3 data-i18n="questionsHeading">💬 Spurningar</h3>
+                        <p data-i18n="questionsText">Spurningartími eftir hverja kynningu</p>
                     </div>
                     <div class="detail-item">
-                        <h3>✅ Mat</h3>
-                        <p>Matið byggir á hönnun glærupakka, framsetningu efnis, skýru tali og góðri ræðu, fjölbreyttni á milli glæra og fjölda glæra </p>
-                        <p>Á meðan aðrir hópar eru að kynna meta hinir nemendurnir (sem ekki eru að kynna) kynninguna og fylla út form</p>
+                        <h3 data-i18n="evaluationHeading">✅ Mat</h3>
+                        <p data-i18n="evaluationText">Matið byggir á hönnun glærupakka, framsetningu efnis, skýru tali og góðri ræðu, fjölbreyttni á milli glæra og fjölda glæra </p>
+                        <p data-i18n="evaluationText2">Á meðan aðrir hópar eru að kynna meta hinir nemendurnir (sem ekki eru að kynna) kynninguna og fylla út form</p>
                     </div>
                 </div>
             </div>
@@ -216,23 +227,23 @@
         <!-- Slide 8: Kynningartímar hópanna -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Kynningartímar hópanna</h1>
+                <h1 data-i18n="presentationTimesTitle">Kynningartímar hópanna</h1>
                 <div class="schedule">
                     <div class="day">
-                        <h2>Hópur 1 - Jólin</h2>
-                        <p>12:45 til 13:05</p>
+                        <h2 data-i18n="group1Topic">Hópur 1 - Jólin</h2>
+                        <p data-i18n="group1Time">12:45 til 13:05</p>
                     </div>
                     <div class="day">
-                        <h2>Hópur 2 - Litir náttúrunnar</h2>
-                        <p>13:10 til 13:30</p>
+                        <h2 data-i18n="group2Topic">Hópur 2 - Litir náttúrunnar</h2>
+                        <p data-i18n="group2Time">13:10 til 13:30</p>
                     </div>
                     <div class="day">
-                        <h2>Hópur 3 - Minni hugans</h2>
-                        <p>13:35 til 13:55</p>
+                        <h2 data-i18n="group3Topic">Hópur 3 - Minni hugans</h2>
+                        <p data-i18n="group3Time">13:35 til 13:55</p>
                     </div>
                     <div class="day">
-                        <h2>Hópur 4 - Ísland</h2>
-                        <p>14:00 til 14:20</p>
+                        <h2 data-i18n="group4Topic">Hópur 4 - Ísland</h2>
+                        <p data-i18n="group4Time">14:00 til 14:20</p>
                     </div>
                 </div>
             </div>
@@ -241,11 +252,11 @@
         <!-- Slide 9: Ítarleg matsviðmið -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Ítarleg matsviðmið</h1>
+                <h1 data-i18n="detailedRubricTitle">Ítarleg matsviðmið</h1>
                 <div class="detailed-rubric">
                     <div class="criteria-table">
                         <div class="criteria-row header">
-                            <div class="criteria-name">Matsþáttur</div>
+                            <div class="criteria-name" data-i18n="criteriaName">Matsþáttur</div>
                             <div class="criteria-grade">0-2</div>
                             <div class="criteria-grade">3-4</div>
                             <div class="criteria-grade">5-6</div>
@@ -254,48 +265,48 @@
                         </div>
                         
                         <div class="criteria-row">
-                            <div class="criteria-name"><strong>Hönnun glærupakka</strong></div>
-                            <div class="criteria-desc fail">Einlítur bakgrunnur, sjálfgefið letur</div>
-                            <div class="criteria-desc poor">Einföld hönnun, lítil sköpun</div>
-                            <div class="criteria-desc average">Þokkaleg hönnun, nokkur fjölbreytni</div>
-                            <div class="criteria-desc good">Góð hönnun, samræmd þema</div>
-                            <div class="criteria-desc excellent">Fagleg hönnun, skapandi og samræmd</div>
+                            <div class="criteria-name"><strong data-i18n="designCriteria">Hönnun glærupakka</strong></div>
+                            <div class="criteria-desc fail" data-i18n="design0_2">Einlítur bakgrunnur, sjálfgefið letur</div>
+                            <div class="criteria-desc poor" data-i18n="design3_4">Einföld hönnun, lítil sköpun</div>
+                            <div class="criteria-desc average" data-i18n="design5_6">Þokkaleg hönnun, nokkur fjölbreytni</div>
+                            <div class="criteria-desc good" data-i18n="design7_8">Góð hönnun, samræmd þema</div>
+                            <div class="criteria-desc excellent" data-i18n="design9_10">Fagleg hönnun, skapandi og samræmd</div>
                         </div>
                         
                         <div class="criteria-row">
-                            <div class="criteria-name"><strong>Framsetning efnis</strong></div>
-                            <div class="criteria-desc fail">Óskipulögð, erfitt að skilja</div>
-                            <div class="criteria-desc poor">Lítil skipulag, óljóst</div>
-                            <div class="criteria-desc average">Ásættanlegt skipulag</div>
-                            <div class="criteria-desc good">Vel skipulögð, skýr</div>
-                            <div class="criteria-desc excellent">Frábær skipulag, mjög skýr og áhugaverð</div>
+                            <div class="criteria-name"><strong data-i18n="contentCriteria">Framsetning efnis</strong></div>
+                            <div class="criteria-desc fail" data-i18n="content0_2">Óskipulögð, erfitt að skilja</div>
+                            <div class="criteria-desc poor" data-i18n="content3_4">Lítil skipulag, óljóst</div>
+                            <div class="criteria-desc average" data-i18n="content5_6">Ásættanlegt skipulag</div>
+                            <div class="criteria-desc good" data-i18n="content7_8">Vel skipulögð, skýr</div>
+                            <div class="criteria-desc excellent" data-i18n="content9_10">Frábær skipulag, mjög skýr og áhugaverð</div>
                         </div>
                         
                         <div class="criteria-row">
-                            <div class="criteria-name"><strong>Skýrt tal og góð ræða</strong></div>
-                            <div class="criteria-desc fail">Óskýrt, lítill áhugi</div>
-                            <div class="criteria-desc poor">Erfitt að heyra, óöruggt</div>
-                            <div class="criteria-desc average">Skýrt en eintóna</div>
-                            <div class="criteria-desc good">Skýrt og öruggt</div>
-                            <div class="criteria-desc excellent">Mjög skýrt, áhugavert og trúverðugt</div>
+                            <div class="criteria-name"><strong data-i18n="speechCriteria">Skýrt tal og góð ræða</strong></div>
+                            <div class="criteria-desc fail" data-i18n="speech0_2">Óskýrt, lítill áhugi</div>
+                            <div class="criteria-desc poor" data-i18n="speech3_4">Erfitt að heyra, óöruggt</div>
+                            <div class="criteria-desc average" data-i18n="speech5_6">Skýrt en eintóna</div>
+                            <div class="criteria-desc good" data-i18n="speech7_8">Skýrt og öruggt</div>
+                            <div class="criteria-desc excellent" data-i18n="speech9_10">Mjög skýrt, áhugavert og trúverðugt</div>
                         </div>
                         
                         <div class="criteria-row">
-                            <div class="criteria-name"><strong>Fjölbreytni á milli glæra</strong></div>
-                            <div class="criteria-desc fail">Engin fjölbreytni</div>
-                            <div class="criteria-desc poor">Mjög lítil fjölbreytni</div>
-                            <div class="criteria-desc average">Nokkur fjölbreytni</div>
-                            <div class="criteria-desc good">Góð fjölbreytni</div>
-                            <div class="criteria-desc excellent">Mikil fjölbreytni og sköpun</div>
+                            <div class="criteria-name"><strong data-i18n="varietyCriteria">Fjölbreytni á milli glæra</strong></div>
+                            <div class="criteria-desc fail" data-i18n="variety0_2">Engin fjölbreytni</div>
+                            <div class="criteria-desc poor" data-i18n="variety3_4">Mjög lítil fjölbreytni</div>
+                            <div class="criteria-desc average" data-i18n="variety5_6">Nokkur fjölbreytni</div>
+                            <div class="criteria-desc good" data-i18n="variety7_8">Góð fjölbreytni</div>
+                            <div class="criteria-desc excellent" data-i18n="variety9_10">Mikil fjölbreytni og sköpun</div>
                         </div>
                         
                         <div class="criteria-row">
-                            <div class="criteria-name"><strong>Fjöldi glæra</strong></div>
-                            <div class="criteria-desc fail">1 eða meira en 50</div>
-                            <div class="criteria-desc poor">2-4 eða 40-49</div>
-                            <div class="criteria-desc average">5-9 eða 30-39</div>
-                            <div class="criteria-desc good">10-17 eða 25-29</div>
-                            <div class="criteria-desc excellent">18 til 24</div>
+                            <div class="criteria-name"><strong data-i18n="quantityCriteria">Fjöldi glæra</strong></div>
+                            <div class="criteria-desc fail" data-i18n="quantity0_2">1 eða meira en 50</div>
+                            <div class="criteria-desc poor" data-i18n="quantity3_4">2-4 eða 40-49</div>
+                            <div class="criteria-desc average" data-i18n="quantity5_6">5-9 eða 30-39</div>
+                            <div class="criteria-desc good" data-i18n="quantity7_8">10-17 eða 25-29</div>
+                            <div class="criteria-desc excellent" data-i18n="quantity9_10">18 til 24</div>
                         </div>
                     </div>
                 </div>
@@ -305,46 +316,46 @@
         <!-- Slide 10: Jafningjamat - Útskýring -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Jafningjamat (Peer Evaluation)</h1>
+                <h1 data-i18n="peerEvalTitle">Jafningjamat (Peer Evaluation)</h1>
                 <div class="peer-eval-container">
                     <div class="peer-eval-section">
-                        <h3>📝 Hvað er jafningjamat?</h3>
-                        <p>Þú metur frammistöðu allra í hópnum (þ.m.t. þig sjálf/sjálfan)</p>
-                        <p><strong>Skilafrestur:</strong> Föstudagurinn 31. október kl. 23:59</p>
+                        <h3 data-i18n="whatIsItHeading">📝 Hvað er jafningjamat?</h3>
+                        <p data-i18n="whatIsItText">Þú metur frammistöðu allra í hópnum (þ.m.t. þig sjálf/sjálfan)</p>
+                        <p><strong data-i18n="deadlineText">Skilafrestur: Föstudagurinn 31. október kl. 23:59</strong></p>
                     </div>
                     
                     <div class="peer-eval-section">
-                        <h3>📊 Hvernig virkar þetta?</h3>
+                        <h3 data-i18n="howWorksHeading">📊 Hvernig virkar þetta?</h3>
                         <div class="eval-points">
                             <div class="eval-point">
-                                <strong>Stig til útdeilingar:</strong> Hópur með 4 nemendum hefur 28 stig
+                                <strong data-i18n="pointsToDistribute">Stig til útdeilingar: Hópur með 4 nemendum hefur 28 stig</strong>
                             </div>
                             <div class="eval-point">
-                                <strong>Jöfn vinna:</strong> Ef allir vinna jafn mikið → 7 stig hverjum
+                                <strong data-i18n="evenWork">Jöfn vinna: Ef allir vinna jafn mikið → 7 stig hverjum</strong>
                             </div>
                             <div class="eval-point">
-                                <strong>Mismunandi vinna:</strong> Skiptu stigunum eftir því sem þér finnst rétt
+                                <strong data-i18n="differentWork">Mismunandi vinna: Skiptu stigunum eftir því sem þér finnst rétt</strong>
                             </div>
                             <div class="eval-point">
-                                <strong>Hámark:</strong> Þú getur gefið allt að 10 stig
+                                <strong data-i18n="maximum">Hámark: Þú getur gefið allt að 10 stig</strong>
                             </div>
                         </div>
                     </div>
                     
                     <div class="peer-eval-section">
-                        <h3>🧮 Útreikningur á einkunn</h3>
+                        <h3 data-i18n="calculationHeading">🧮 Útreikningur á einkunn</h3>
                         <div class="formula">
-                            <p><strong>Þín einkun (frá jafningjum) =</strong></p>
-                            <p class="formula-text">((S - 7) × 0.1 + 1) × X</p>
-                            <p><strong>S</strong> = Meðaleinkunn frá jafningjum</p>
-                            <p><strong>X</strong> = Einkunn hópsins fyrir verkefnið</p>
+                            <p><strong data-i18n="calculationLabel">Þín einkun (frá jafningjum) =</strong></p>
+                            <p class="formula-text" data-i18n="formulaText">((S - 7) × 0.1 + 1) × X</p>
+                            <p data-i18n="formulaS"><strong>S</strong> = Meðaleinkunn frá jafningjum</p>
+                            <p data-i18n="formulaX"><strong>X</strong> = Einkunn hópsins fyrir verkefnið</p>
                         </div>
                     </div>
                     
                     <div class="peer-eval-section">
-                        <h3>✅ Lokaeinkunn þín</h3>
+                        <h3 data-i18n="finalGradeHeading">✅ Lokaeinkunn þín</h3>
                         <p class="final-grade-calc">
-                            <strong>Einkunnin er ráðgefandi og kennarar taka alltaf ákvörðun um loka einkunn</strong>
+                            <strong data-i18n="finalGradeText">Einkunnin er ráðgefandi og kennarar taka alltaf ákvörðun um loka einkunn</strong>
                         </p>
                     </div>
                 </div>
@@ -354,62 +365,62 @@
         <!-- Slide 11: Jafningjamat - Gagnvirk sýnikennsla -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Jafningjamat - Gagnvirk sýnikennsla</h1>
+                <h1 data-i18n="peerEvalDemoTitle">Jafningjamat - Gagnvirk sýnikennsla</h1>
                 <div class="interactive-demo">
                     <div class="demo-scenario">
-                        <h3>📖 Atburðarás</h3>
-                        <p>Jónni, Logi, Smári og Pedro eru í sama hóp. Þeir hönnuðu síðuna saman en Pedro tók að sér mest alla forritun. Smári mætti ekki á fundi og forðaðist ábyrgð.</p>
+                        <h3 data-i18n="scenarioHeading">📖 Atburðarás</h3>
+                        <p data-i18n="scenarioText">Jónni, Logi, Smári og Pedro eru í sama hóp. Þeir hönnuðu síðuna saman en Pedro tók að sér mest alla forritun. Smári mætti ekki á fundi og forðaðist ábyrgð.</p>
                     </div>
                     
                     <div class="demo-tables">
                         <div class="demo-table">
-                            <h3>Jónni gefur stigin:</h3>
+                            <h3 data-i18n="jonniGives">Jónni gefur stigin:</h3>
                             <table class="peer-table">
-                                <tr><th>Nemandi</th><th>Stig</th><th>Ástæða</th></tr>
-                                <tr><td>Jónni (sjálfur)</td><td class="points">7</td><td>Jöfn vinna</td></tr>
-                                <tr><td>Smári</td><td class="points low">4</td><td>Lítil þátttaka</td></tr>
-                                <tr><td>Pedro</td><td class="points high">10</td><td>Tók á sig mest</td></tr>
-                                <tr><td>Logi</td><td class="points">7</td><td>Jöfn vinna</td></tr>
-                                <tr class="total-row"><td><strong>Samtals</strong></td><td colspan="2"><strong>28 stig</strong></td></tr>
+                                <tr><th data-i18n="studentLabel">Nemandi</th><th data-i18n="pointsLabel">Stig</th><th data-i18n="reasonLabel">Ástæða</th></tr>
+                                <tr><td>Jónni <span data-i18n="selfLabel">(sjálfur)</span></td><td class="points">7</td><td data-i18n="reason_evenWork">Jöfn vinna</td></tr>
+                                <tr><td>Smári</td><td class="points low">4</td><td data-i18n="reason_littleParticipation">Lítil þátttaka</td></tr>
+                                <tr><td>Pedro</td><td class="points high">10</td><td data-i18n="reason_mostWork">Tók á sig mest</td></tr>
+                                <tr><td>Logi</td><td class="points">7</td><td data-i18n="reason_evenWork">Jöfn vinna</td></tr>
+                                <tr class="total-row"><td><strong data-i18n="totalLabel">Samtals</strong></td><td colspan="2"><strong data-i18n="totalPoints">28 stig</strong></td></tr>
                             </table>
                         </div>
                         
                         <div class="demo-table">
-                            <h3>Pedro gefur stigin:</h3>
+                            <h3 data-i18n="pedroGives">Pedro gefur stigin:</h3>
                             <table class="peer-table">
-                                <tr><th>Nemandi</th><th>Stig</th><th>Ástæða</th></tr>
-                                <tr><td>Pedro (sjálfur)</td><td class="points">7</td><td>Jöfn vinna</td></tr>
-                                <tr><td>Smári</td><td class="points high">8</td><td>Gerði vel</td></tr>
-                                <tr><td>Jónni</td><td class="points medium">6</td><td>Ásættanlegt</td></tr>
-                                <tr><td>Logi</td><td class="points">7</td><td>Jöfn vinna</td></tr>
-                                <tr class="total-row"><td><strong>Samtals</strong></td><td colspan="2"><strong>28 stig</strong></td></tr>
+                                <tr><th data-i18n="studentLabel">Nemandi</th><th data-i18n="pointsLabel">Stig</th><th data-i18n="reasonLabel">Ástæða</th></tr>
+                                <tr><td>Pedro <span data-i18n="selfLabel">(sjálfur)</span></td><td class="points">7</td><td data-i18n="reason_evenWork">Jöfn vinna</td></tr>
+                                <tr><td>Smári</td><td class="points high">8</td><td data-i18n="reason_didWell">Gerði vel</td></tr>
+                                <tr><td>Jónni</td><td class="points medium">6</td><td data-i18n="reason_acceptable">Ásættanlegt</td></tr>
+                                <tr><td>Logi</td><td class="points">7</td><td data-i18n="reason_evenWork">Jöfn vinna</td></tr>
+                                <tr class="total-row"><td><strong data-i18n="totalLabel">Samtals</strong></td><td colspan="2"><strong data-i18n="totalPoints">28 stig</strong></td></tr>
                             </table>
                         </div>
                     </div>
                     
                     <div class="demo-calculation">
-                        <h3>📐 Dæmi um útreikning</h3>
+                        <h3 data-i18n="calculationExampleHeading">📐 Dæmi um útreikning</h3>
                         <div class="calc-example">
-                            <p><strong>Atburðarás:</strong> Davíð fær meðaleinkunn 9 frá jafningjum. Hópurinn fékk 7 fyrir verkefnið.</p>
-                            <p class="calc-formula">((9 - 7) × 0.1 + 1) × 7 = <strong>8.4</strong></p>
-                            <p class="result">✅ Davíð fær <strong>8.4</strong> sem sína lokaeinkunn frá jafningjum</p>
+                            <p data-i18n="exampleScenario"><strong>Atburðarás:</strong> Davíð fær meðaleinkunn 9 frá jafningjum. Hópurinn fékk 7 fyrir verkefnið.</p>
+                            <p class="calc-formula" data-i18n="exampleFormula">((9 - 7) × 0.1 + 1) × 7 = <strong>8.4</strong></p>
+                            <p class="result" data-i18n="exampleResult">✅ Davíð fær <strong>8.4</strong> sem sína lokaeinkunn frá jafningjum</p>
                         </div>
                     </div>
                     
                     <div class="demo-guide">
-                        <h3>📋 Leiðbeiningar fyrir stigagjöf</h3>
+                        <h3 data-i18n="guidelinesHeading">📋 Leiðbeiningar fyrir stigagjöf</h3>
                         <div class="guide-grid">
-                            <div class="guide-item">10 - Óvenjulegur: Tók fulla ábyrgð</div>
-                            <div class="guide-item">9 - Mjög góður: Á mest í verkefninu</div>
-                            <div class="guide-item">8 - Afar góður: Gerði meira en meðaltal</div>
-                            <div class="guide-item">7 - Góður: Jöfn vinna við aðra</div>
-                            <div class="guide-item">6 - Ásættanlegur: Gæti verið virkari</div>
-                            <div class="guide-item">5 - Í lagi: Tók á sig litla ábyrgð</div>
-                            <div class="guide-item">4 - Vantar eitthvað: Uppfyllti ekki kröfur</div>
-                            <div class="guide-item">3 - Óviðunandi: Lítil þátttaka</div>
-                            <div class="guide-item">2 - Óvirkur: Tók varla þátt</div>
-                            <div class="guide-item">1 - Ekkert: Gerði ekkert</div>
-                            <div class="guide-item">0 - Ósýnilegur: Sást ekki</div>
+                            <div class="guide-item" data-i18n="guide10">10 - Óvenjulegur: Tók fulla ábyrgð</div>
+                            <div class="guide-item" data-i18n="guide9">9 - Mjög góður: Á mest í verkefninu</div>
+                            <div class="guide-item" data-i18n="guide8">8 - Afar góður: Gerði meira en meðaltal</div>
+                            <div class="guide-item" data-i18n="guide7">7 - Góður: Jöfn vinna við aðra</div>
+                            <div class="guide-item" data-i18n="guide6">6 - Ásættanlegur: Gæti verið virkari</div>
+                            <div class="guide-item" data-i18n="guide5">5 - Í lagi: Tók á sig litla ábyrgð</div>
+                            <div class="guide-item" data-i18n="guide4">4 - Vantar eitthvað: Uppfyllti ekki kröfur</div>
+                            <div class="guide-item" data-i18n="guide3">3 - Óviðunandi: Lítil þátttaka</div>
+                            <div class="guide-item" data-i18n="guide2">2 - Óvirkur: Tók varla þátt</div>
+                            <div class="guide-item" data-i18n="guide1">1 - Ekkert: Gerði ekkert</div>
+                            <div class="guide-item" data-i18n="guide0">0 - Ósýnilegur: Sást ekki</div>
                         </div>
                     </div>
                 </div>
@@ -419,8 +430,8 @@
         <!-- Slide 12: Spurningar -->
         <div class="slide">
             <div class="slide-content">
-                <h1>Spurningar?</h1>
-                <p class="questions-text">Eru einhverjar spurningar um verkefnið?</p>
+                <h1 data-i18n="questionsSlideTitle">Spurningar?</h1>
+                <p class="questions-text" data-i18n="questionsSlideText">Eru einhverjar spurningar um verkefnið?</p>
                 <div class="emoji">🙋‍♀️ 🙋‍♂️</div>
             </div>
         </div>
@@ -434,6 +445,7 @@
         <button class="nav-btn" id="nextBtn">Áfram ›</button>
     </div>
 
+    <script src="translations.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
