@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* Thai font face */
+@font-face {
+    font-family: 'Garuda';
+    src: url('fonts/Garuda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: 'Segoe UI', 'Noto Sans Thai', Tahoma, 'Leelawadee UI', Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -52,7 +61,7 @@ body {
 /* Language-specific font support */
 body[lang="th"], 
 body[lang="th"] * {
-    font-family: 'Leelawadee UI', 'Cordia New', 'Tahoma', 'Segoe UI', sans-serif !important;
+    font-family: 'Garuda', 'Loma', 'Tlwg Typo', 'Noto Sans Thai', 'Leelawadee UI', 'Cordia New', 'Tahoma', 'Arial Unicode MS', sans-serif !important;
 }
 
 /* RTL support for Arabic and Persian */
