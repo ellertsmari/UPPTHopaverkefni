@@ -8,6 +8,44 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const slideNumber = document.getElementById('slideNumber');
 
+// Language functionality
+let currentLanguage = localStorage.getItem('selectedLanguage') || 'is';
+
+// Update text content based on current language
+function updateLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('selectedLanguage', lang);
+    
+    const t = translations[lang];
+    
+    // Update navigation buttons
+    prevBtn.textContent = t.prevBtn;
+    nextBtn.textContent = t.nextBtn;
+    
+    // Update all translatable elements
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (t[key]) {
+            element.textContent = t[key];
+        }
+    });
+    
+    // Set text direction for RTL languages (Arabic and Persian)
+    if (lang === 'ar' || lang === 'fa') {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', lang);
+    } else {
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', lang);
+    }
+    
+    // Update language selector
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+        languageSelect.value = lang;
+    }
+}
+
 // Show the current slide
 function showSlide(n) {
     // Remove active class from all slides
@@ -44,6 +82,19 @@ function prevSlide() {
 // Event listeners
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
+
+// Language selector event listener
+document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+        languageSelect.addEventListener('change', (e) => {
+            updateLanguage(e.target.value);
+        });
+    }
+    
+    // Initialize language
+    updateLanguage(currentLanguage);
+});
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
