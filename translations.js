@@ -379,9 +379,7 @@ const translations = {
         // Slide 12
         questionsSlideTitle: "Questions?",
         questionsSlideText: "Any questions about the project?"
-    }
-};
-,
+    },
     th: {
         // Navigation
         prevBtn: "‹ ย้อนกลับ",
